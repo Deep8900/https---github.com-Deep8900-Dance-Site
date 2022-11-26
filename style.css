@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+#logo img{
+    height: 100px;
+    filter: invert(0.08);
+}
+#logo img:hover{
+    transform: translateY(10px);
+    scale: 1.2;
+    transition: 0.35s;
+    border-bottom: 1px solid rgb(91, 89, 89);
+    cursor: pointer;
+}
+#navbar{
+    background: #141313;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navbar li{
+    list-style: none;
+    padding: 20px;
+    padding-top: 40px;
+}
+#navbar li a {
+    text-decoration: none;
+    color: #a7a4a4;
+    font-size: 1.2rem;
+}
+#navbar li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+#navbar li:hover{
+    scale: 1.1;
+}
+#introSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 3rem;
+    color: whitesmoke;
+    background: center / cover no-repeat url("images/dance1.jpg");
+    text-shadow: 3px 3px #989898, 3px 3px #6c6666;
+}
+#introSection span{
+    font-weight: bold;
+}
+#para2{
+    padding: 8px 0px;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+    margin-top: -180px;
+}
+#para1{
+    font-size: 2rem;
+    text-shadow: none;
+}
+#sponsersSection,
+#missionSection {
+    height: 600px;
+    background: #151111;
+    color: whitesmoke;
+    padding-top: 25px;
+    text-align: center;
+    padding-top: 80px;
+}
+#missionSection {
+    background: center / cover no-repeat url("images/d6.jpg");
+}
+#sponsersSection span,
+#missionSection span{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+.card-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 40px;
+    place-items: center;
+}
+.card{
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    height: 306px;
+    margin: 25px;
+    margin-top: 35px;
+    background-color: hsl(0, 3%, 8%);
+    padding: 20px;
+    position: relative;
+    max-width: 255px;
+}
+.card-img img{
+    height: 245px;
+    width: 210px;
+    border-radius: 5px;
+    /* z-index: 1; */
+}
+.card-img p{
+    position: absolute;
+    top: 210px;
+    left: 15;
+    padding: 35px;
+    background: #141313;
+    opacity: 0;
+    width: 90%;
+    color: whitesmoke;
+}
+.card-img:hover > p{
+    transition: 0.4s;
+    opacity: 1;
+    transform: translateY(-50px);
+}
+.card:hover > .card-img img{
+    opacity: 0.3;
+}
+#sponsersSection {
+    background: center / cover no-repeat url("images/d1.jpg");
+}
+#sponsers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-top: 20px;
+}
+#sponsers img{
+    height: 150px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+#footer{
+    height: 50px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
